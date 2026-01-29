@@ -206,3 +206,83 @@ footer {
     flex-direction: column;
   }
 }
+/* ===== MOBILE NAVBAR ===== */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #0f172a;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ===== HERO RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* ===== STATS RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+/* ===== SECTION RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 20px;
+  }
+}
+
+/* ===== CARDS RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== FORM RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .contact-form {
+    width: 100%;
+  }
+}
