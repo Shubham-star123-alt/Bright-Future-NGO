@@ -28,3 +28,11 @@ document.querySelectorAll("nav a").forEach(anchor => {
     });
   });
 });
+// Mobile Menu Toggle
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
