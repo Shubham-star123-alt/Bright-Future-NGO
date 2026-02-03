@@ -2,111 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bright Future Foundation</title>
+
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <header class="navbar">
-  <div class="logo">BrightFuture</div>
+  <div class="logo">Bright<span>Future</span></div>
 
   <div class="menu-toggle" id="menuToggle">☰</div>
 
   <nav id="navMenu">
     <a href="#home">Home</a>
-    <a href="#about">About</a>
+    <a href="#about">Mission</a>
     <a href="#programs">Programs</a>
     <a href="#impact">Impact</a>
-    <a href="#volunteer">Get Involved</a>
     <a href="#contact" class="btn">Donate</a>
   </nav>
 </header>
 
-<!-- Hero Section -->
+<!-- HERO -->
 <section id="home" class="hero">
-  <div class="hero-content">
-    <h1>Educate & Nourish <span>Every Child</span></h1>
-    <p>Helping slum children in Badlapur with education and nutrition.</p>
+  <div class="hero-content reveal">
+    <h1>
+      Building <span>Hope</span><br/>
+      for Every Child
+    </h1>
+    <p>
+      Education • Nutrition • Care for slum children in Badlapur
+    </p>
+
     <div class="hero-buttons">
       <button class="btn-primary">Donate Now</button>
-      <button class="btn-secondary">Join as Volunteer</button>
+      <button class="btn-outline">Volunteer</button>
     </div>
   </div>
 </section>
 
-<!-- About Section -->
+<!-- ABOUT -->
 <section id="about" class="section">
-  <h2>About Our Mission</h2>
-  <p>
-    Bright Future Foundation works in slum areas of Badlapur to provide free education, 
-    healthy meals, and a better future for underprivileged children.
-  </p>
+  <div class="container reveal">
+    <h2>Our Mission</h2>
+    <p class="subtitle">
+      We work at the grassroots level to ensure no child sleeps hungry
+      or grows up without education.
+    </p>
+  </div>
 </section>
 
-<!-- Programs -->
+<!-- PROGRAMS -->
 <section id="programs" class="section dark">
-  <h2>Our Programs</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>📚 Education</h3>
-      <p>Free tutoring, books, and school support for slum children.</p>
-    </div>
-    <div class="card">
-      <h3>🥗 Nutrition</h3>
-      <p>Daily meals and health checkups to fight malnutrition.</p>
-    </div>
-    <div class="card">
-      <h3>🏥 Health Camps</h3>
-      <p>Regular medical camps and awareness programs.</p>
+  <div class="container">
+    <h2 class="reveal">What We Do</h2>
+
+    <div class="cards">
+      <div class="card reveal">
+        <h3>📚 Education</h3>
+        <p>Daily learning support, school admissions, books & mentoring.</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>🥗 Nutrition</h3>
+        <p>Healthy meals and growth monitoring for children.</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>🩺 Health</h3>
+        <p>Medical camps, hygiene awareness & basic healthcare.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Impact -->
+<!-- IMPACT -->
 <section id="impact" class="section">
-  <h2>Our Impact</h2>
-  <div class="stats">
-    <div class="stat">
-      <h3 class="counter" data-target="0">0</h3>
-      <p>Children Educated</p>
-    </div>
-    <div class="stat">
-      <h3 class="counter" data-target="3">0</h3>
-      <p>Meals Served Daily</p>
-    </div>
-    <div class="stat">
-      <h3 class="counter" data-target="6">0</h3>
-      <p>Volunteers</p>
+  <div class="container">
+    <h2 class="reveal">Our Impact</h2>
+
+    <div class="stats">
+      <div class="stat reveal">
+        <h3 class="counter" data-target="120">0</h3>
+        <p>Children Supported</p>
+      </div>
+
+      <div class="stat reveal">
+        <h3 class="counter" data-target="300">0</h3>
+        <p>Meals Served</p>
+      </div>
+
+      <div class="stat reveal">
+        <h3 class="counter" data-target="25">0</h3>
+        <p>Volunteers</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Volunteer -->
-<section id="volunteer" class="section dark">
-  <h2>Get Involved</h2>
-  <p>Join us to change lives. Become a volunteer or sponsor a child.</p>
-  <button class="btn-primary">Join Now</button>
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+  <div class="container reveal">
+    <h2>Contact Us</h2>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button class="btn-primary" type="submit">Send Message</button>
+    </form>
+  </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="section">
-  <h2>Contact & Donate</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea placeholder="Message"></textarea>
-    <button type="submit" class="btn-primary">Send Message</button>
-  </form>
-</section>
-
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 Bright Future Foundation | Badlapur, Maharashtra</p>
+  <p>© 2026 Bright Future Foundation • Badlapur, Maharashtra</p>
 </footer>
 
 </body>
 </html>
-
